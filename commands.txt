@@ -1,6 +1,6 @@
 z: Appends a random integer between 32 and 126 (inclusive) to the data list.
-V: Pops the last item from the data list and appends its corresponding ASCII character to the output string.
-7: Prompts the user to enter a character and appends its ASCII code to the data list.
+V: Pops the last item from the data list and appends its corresponding Unicode character to the output string.
+7: Prompts the user to enter a character and appends its Unicode codepoint to the data list.
 ^: Increments the last item in the data list by 1.
 %: Decrements the last item in the data list by 1.
 t: Swaps the last two items in the data list.
@@ -29,8 +29,8 @@ a: Converts the last item in the data list to its opposite case (uppercase to lo
 L: Pops the last item from the data list, converts it to a string, and appends the length of that string to the data list.
 _: Pops the last item from the data list, divides it by 10 (integer division), and appends the result to the data list.
 &: Pops the last item from the data list, takes its modulo 10, and appends the result to the data list.
-e: checks if the top of the stack contains either the ASCII code for the letter "E" (69) or the letter "e" (101). It pops the top value from the stack and pushes a boolean value (True or False) 
-": Prompts the user for a single character input, converts it to its ASCII code, and pushes it to the data stack.
+e: checks if the top of the stack contains either the Unicode codepoint for the letter "E" (69) or the letter "e" (101). It pops the top value from the stack and pushes a boolean value (True or False) 
+": Prompts the user for a single character input, converts it to its Unicode codepoint, and pushes it to the data stack.
 H: Pops the top value from the data stack, converts it to a string, and appends it to the output string.
 l: Performs a bitwise AND operation between the top value of the data stack and 255, and pushes the result back to the data stack.
 $: Pops the top value from the data stack, multiplies it by 10, and pushes the result back to the data stack.
