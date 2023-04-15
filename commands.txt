@@ -1,0 +1,37 @@
+z: Appends a random integer between 32 and 126 (inclusive) to the data list.
+V: Pops the last item from the data list and appends its corresponding ASCII character to the output string.
+7: Prompts the user to enter a character and appends its ASCII code to the data list.
+^: Increments the last item in the data list by 1.
+%: Decrements the last item in the data list by 1.
+t: Swaps the last two items in the data list.
+F: Pops the last item from the data list and discards it.
+>: Pops the last item from the data list and jumps forward in the program that number of steps.
+[: If the last item in the data list is 0, jumps forward to the corresponding ] command.
+q: Doubles the last item in the data list modulo 128.
+@: Divides the last item in the data list by 2, and takes the result modulo 128.
+M: Pops the last two items from the data list, adds them together, and appends the result to the data list.
+/: Pops the last two items from the data list, divides the second-to-last by the last, and appends the result to the data list.
+!: Pops the last item from the data list, applies the logical NOT operator to it, and appends the result to the data list.
+x: Pops the last two items from the data list, applies the XOR operator to them, and appends the result to the data list.
+D: Pops the last item from the data list, duplicates it, and appends the duplicate to the data list.
+c: Converts the last item in the data list to lowercase (if it corresponds to an uppercase letter).
+K: Converts the last item in the data list to uppercase (if it corresponds to a lowercase letter).
+#: Appends the length of the data list to the data list.
+*: Pops the last two items from the data list, multiplies them together, and appends the result to the data list.
++: Pops the last two items from the data list, adds them together, and appends the result to the data list.
+s: Pops the last item from the data list, takes its absolute value, and appends the result to the data list.
+<: Pops the last item from the data list and jumps backward in the program that number of steps.
+0: Appends a 0 to the data list.
+~: Pops the last item from the data list, negates it, and appends the result to the data list.
+{: Appends a 1 to the data list.
+a: Converts the last item in the data list to its opposite case (uppercase to lowercase, lowercase to uppercase).
+2: Appends a 2 to the data list.
+L: Pops the last item from the data list, converts it to a string, and appends the length of that string to the data list.
+_: Pops the last item from the data list, divides it by 10 (integer division), and appends the result to the data list.
+&: Pops the last item from the data list, takes its modulo 10, and appends the result to the data list.
+e: checks if the top of the stack contains either the ASCII code for the letter "E" (69) or the letter "e" (101). It pops the top value from the stack and pushes a boolean value (True or False) 
+": Prompts the user for a single character input, converts it to its ASCII code, and pushes it to the data stack.
+H: Pops the top value from the data stack, converts it to a string, and appends it to the output string.
+l: Performs a bitwise AND operation between the top value of the data stack and 255, and pushes the result back to the data stack.
+$: Pops the top value from the data stack, multiplies it by 10, and pushes the result back to the data stack.
+): Pops the top value from the data stack, calculates its modulo 2, and pushes the result back to the data stack.
