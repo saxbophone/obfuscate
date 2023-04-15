@@ -20,7 +20,7 @@ def obfuscate_interpreter(code):
         elif char == '%':
             data[-1] -= 1
         elif char == 't':
-            data[-2], data[-1] = data[-1], data[-2]
+            data[-2], data[-1] = data[-1], data[-2] 
         elif char == 'F':
             data.pop()
         elif char == '>':
@@ -93,11 +93,13 @@ def obfuscate_interpreter(code):
             data.append(data.pop() * 10)
         elif char == ')':
             data[-1] = data[-1] % 2
+        elif char == ":":
+            a = data.pop()
+            data.append(int(a-48))
+        elif char == "|":
+            output += str(data.pop())
         pointer += 1
-    if output == "":
-        pass
-    else:
-        print(output)
+    print(output)
     
 
 if len(sys.argv) == 1 or sys.argv[1] == "--shell":
