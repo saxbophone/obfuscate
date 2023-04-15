@@ -35,3 +35,5 @@ H: Pops the top value from the data stack, converts it to a string, and appends 
 l: Performs a bitwise AND operation between the top value of the data stack and 255, and pushes the result back to the data stack.
 $: Pops the top value from the data stack, multiplies it by 10, and pushes the result back to the data stack.
 ): Pops the top value from the data stack, calculates its modulo 2, and pushes the result back to the data stack.
+:: Pops a value then appends the numeric for of it eg ascii char 48 which is 0 turns into 0
+|: adds to the output the poped value as a string
